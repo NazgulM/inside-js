@@ -7,7 +7,7 @@
  */
 export const isPalindrome = (toCheck = '') => {
     let reversedString = '';
-    for (let i = toCheck.length  -1; i <= 0; i--) {
+    for (let i = toCheck.length - 1; i >= 0; i--) {
         reversedString += toCheck.charAt(i);
     }
     return reversedString === toCheck;
