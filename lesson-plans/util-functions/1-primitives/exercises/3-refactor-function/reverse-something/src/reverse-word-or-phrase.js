@@ -21,32 +21,19 @@ const reverseWordOrPhrase = () => {
 
     for (const word of splitText) {
       /// BEGIN: refactor this to call `reverse`
-      const reversedWord = reverse(userText);
-
-      let reversedWord = '';
-      for (const char of word) {
-        reversedWord = char + reversedWord;
-      }
-      /// END: refactor
-
+      const reversedWord = reverse(word);
       newWords.push(reversedWord);
     }
-
     reversed = newWords.join(' ');
   } else {
     /// BEGIN: refactor this to call `reverse`
     reversed = reverse(userText);
 
-    let reversedText = '';
-    for (const char of userText) {
-      reversedText = char + reversedText;
-    }
-    reversed = reversedText;
-    /// END: refactor
   }
 
   // --- display the reversed input ---
   display('reversed-output', reversed);
+  display('secret-solution', reversed);
 };
 
 document.getElementById('do-it').addEventListener('click', reverseWordOrPhrase);
