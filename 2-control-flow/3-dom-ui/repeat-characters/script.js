@@ -15,5 +15,5 @@ let multistr = ''
   }
 
   // display the text with repeated characters
-  display('repated-output', multistr);
+  display('repeated-output', multistr);
 });
