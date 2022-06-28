@@ -10,7 +10,7 @@ const number = readNumber('number-of-times');
 let multistr = ''
   for (let i =0; i < number; i++) {
     for (let j = 0; j < text.length; j++) {
-      multistr += text[j];
+      multistr += text[i];
     }
   }
 
